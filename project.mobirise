@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Alec Deschene - Github Pages",
-    "currentPage": "index.html",
+    "currentPage": "portfolio.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -1491,7 +1491,7 @@
         }
       ]
     },
-    "page4.html": {
+    "takmobile.html": {
       "settings": {
         "meta_descr": "",
         "title": "Alec Deschene - Tak (Mobile)",
@@ -2007,7 +2007,7 @@
         }
       ]
     },
-    "page5.html": {
+    "placeholder.html": {
       "settings": {
         "meta_descr": "",
         "title": "Alec Deschene - Placeholder (PC)",
