@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Alec Deschene - Github Pages",
-    "currentPage": "takmobile.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -590,7 +590,7 @@
             }
           },
           "_name": "content1",
-          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#efefef\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article><p><b><a href=\"takpc.html\">Tak (PC)</a> - Placeholder</b></p><p><b><br></b></p><p><b><a href=\"page4.html\">Tak (Mobile)</a> - Placeholder</b></p><p><b><br></b></p><p><b><a href=\"page5.html\">Placeholder (PC)</a> - Placeholder</b></p></div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#efefef\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article><p><b><a href=\"takpc.html\">Tak (PC)</a> - Placeholder</b></p><p><b><br></b></p><p><b><a href=\"takmobile.html\">Tak (Mobile)</a> - Placeholder</b></p><p><b><br></b></p><p><b><a href=\"placeholder.html\">Placeholder (PC)</a> - Placeholder</b></p></div>\n        </div>\n    </div>\n</section>",
           "_cid": "reX0AgZsrP",
           "_anchor": "content1-o",
           "_protectedParams": [],
