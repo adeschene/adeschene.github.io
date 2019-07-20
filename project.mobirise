@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Alec Deschene - Github Pages",
-    "currentPage": "index.html",
+    "currentPage": "portfolio.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -481,7 +481,7 @@
             }
           },
           "_name": "content1",
-          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#efefef\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article><p><b><a href=\"takpc.html\">Tak (PC)</a> - A PC rendition of the abstract board game of the same name.</b></p><p><b><br></b></p><p><b><a href=\"takmobile.html\">Tak (Mobile)</a> - A mobile rendition of the abstract board game of the same name.</b></p><p><b><br></b></p><p><b><a href=\"placeholder.html\">Placeholder (PC)</a> - A 2D platforming PC game about a strange creature in a strange world.</b></p><p><br></p><p><b>Haskell Game - A small adventure game, with basic graphics, written using Haskell.</b></p><p><b><br></b></p><p><b>Rust Text Game - A small Linux CLI text adventure game written using Rust.</b></p></div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#efefef\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article><p><b><a href=\"takpc.html\">Tak (PC)</a> - A PC rendition of the abstract board game of the same name.</b></p><p><b><br></b></p><p><b><a href=\"takmobile.html\">Tak (Mobile)</a> - A mobile rendition of the abstract board game of the same name.</b></p><p><b><br></b></p><p><b><a href=\"placeholder.html\">Placeholder (PC)</a> - A 2D platforming PC game about a strange creature in a strange world.</b></p><p><br></p><p><b><a href=\"page6.html\">Haskell Game</a> - A small adventure game, with basic graphics, written using Haskell.</b></p><p><b><br></b></p><p><b><a href=\"page7.html\">Rust Text Game</a> - A small Linux CLI text adventure game written using Rust.</b></p></div>\n        </div>\n    </div>\n</section>",
           "_cid": "reX0AgZsrP",
           "_anchor": "content1-o",
           "_protectedParams": [],
@@ -2357,11 +2357,11 @@
           "_isUserblock": true,
           "_sourceTheme": "mobirise4",
           "_cid": "reWVBUKVmz",
+          "_anchor": "footer7-1z",
           "_protectedParams": [],
           "_global": true,
           "_once": true,
-          "_params": {},
-          "_anchor": "footer7-1z"
+          "_params": {}
         }
       ]
     },
@@ -2551,11 +2551,11 @@
           "_isUserblock": true,
           "_sourceTheme": "mobirise4",
           "_cid": "reWVBUKVmz",
+          "_anchor": "footer7-20",
           "_protectedParams": [],
           "_global": true,
           "_once": true,
-          "_params": {},
-          "_anchor": "footer7-20"
+          "_params": {}
         }
       ]
     }
