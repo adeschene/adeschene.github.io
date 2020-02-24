@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  user-select: none;
+  overflow: hidden;
+  position: relative;
+}
+#wrapper #map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#wrapper #map #header #title {
+  font-size: 32px;
+}
+#wrapper #map #header #description {
+  font-size: 14px;
+}
+#wrapper #map .county {
+  stroke: #FFF;
+  stroke-width: 0.2;
+}
+#wrapper #map .county:hover {
+  fill: black;
+}
+#wrapper #map .state {
+  fill: none;
+  stroke: #000;
+}
+#wrapper #map #tooltip {
+  position: fixed;
+  margin: auto;
+  padding: 8px;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 4px;
+  pointer-events: none;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px black, -1px -1px 4px black;
+}
+#wrapper #map #legend {
+  font-size: 12px;
+  shape-rendering: crispEdges;
+}
+#wrapper #map #source-link {
+  font-size: 13px;
+  margin-left: 255px;
+}
+#wrapper #map #source-link a {
+  color: #9230d9;
+  text-decoration: none;
+}
+#wrapper #map #source-link a:hover {
+  color: #d363f2;
+  font-size: 13.25px;
+}

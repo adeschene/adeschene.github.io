@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FFB10F;
+  width: 100vw;
+  height: 100vh;
+}
+#wrapper #calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1C45AE;
+  min-width: 474px;
+  min-height: 745px;
+  border: 3px groove #1C45AE;
+  box-shadow: 0 0 10px black;
+  border-radius: 20px;
+}
+@media (max-width: 480px) {
+  #wrapper #calculator {
+    transform: scale(0.65);
+  }
+}
+@media (max-height: 800px) {
+  #wrapper #calculator {
+    transform: scale(0.65);
+  }
+}
+#wrapper #calculator #branding {
+  display: flex;
+  color: #E1E4E9;
+  width: 100%;
+  margin-top: -32px;
+}
+#wrapper #calculator #branding h3 {
+  font-family: 'Typewriter', sans-serif;
+  padding: 0 0 0 0.75em;
+  margin: -9px 0 -30px 0;
+  font-size: 46px;
+}
+#wrapper #calculator #branding h4 {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 0 2px 1.70em;
+  font-size: 21px;
+}
+#wrapper #calculator #solar-panels {
+  width: 100%;
+  min-height: 120px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  margin-top: -2.65em;
+  padding: 3em 0 0.75em 1.5em;
+  border: 1.5px outset #1C45AE;
+  border-left: 2px inset #4F69A8;
+  border-radius: 6px;
+}
+#wrapper #calculator #solar-panels .panel {
+  width: 45px;
+  border-left: 2px solid black;
+  border-top: 4px inset #1C45AE;
+  border-bottom: 3px inset #1C45AE;
+  background: #3e4232;
+  box-shadow: 0px 2px 3px #222 inset;
+}
+#wrapper #calculator #solar-panels #panel1 {
+  border-left: 4px inset #1C45AE;
+  box-shadow: 4px 2px 4px #222 inset;
+}
+#wrapper #calculator #solar-panels #panel4 {
+  border-right: 4px inset #1C45AE;
+}
+#wrapper #calculator #disp-outline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: grey;
+  margin: 2.785em 0;
+  min-height: 75px;
+  width: 380px;
+  border: 4px inset #1C45AE;
+  border-bottom: 3px inset #1C45AE;
+  border-radius: 3px;
+  box-shadow: 2px 0px 4px black inset;
+}
+#wrapper #calculator #disp-outline #display-area {
+  width: 354px;
+  background: #798263;
+  border-radius: 5px;
+  box-shadow: 1.5px 1.5px 3px #444 inset;
+}
+#wrapper #calculator #disp-outline #display-area #expression, #wrapper #calculator #disp-outline #display-area #input-output {
+  font-family: 'Press Start 2P', cursive;
+  background: #798263;
+  min-height: 26px;
+  text-align: right;
+  padding: 0.5em 0.75em 0 0.75em;
+  margin: 2px;
+  letter-spacing: 1px;
+  word-wrap: break-word;
+}
+#wrapper #calculator #disp-outline #display-area #expression p, #wrapper #calculator #disp-outline #display-area #input-output p {
+  font-size: 12px;
+}
+#wrapper #calculator #disp-outline #display-area #input-output {
+  font-family: DS-Digital, sans-serif;
+  font-weight: bold;
+  padding-top: 0.2em;
+}
+#wrapper #calculator #disp-outline #display-area #input-output p {
+  font-size: 20px;
+}
+#wrapper #calculator #buttons {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0 0 16px;
+  margin: 1em;
+  margin-bottom: 1.5em;
+  border-radius: 8px;
+  border: 2px groove #4F69A8;
+}
+#wrapper #calculator #buttons #buttons-left {
+  margin-right: 1em;
+}
+#wrapper #calculator #buttons #buttons-right {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0;
+}
+#wrapper #calculator #buttons button {
+  width: 6.5em;
+  height: 4em;
+  text-align: left;
+  padding: 0 0 2em 0.8em;
+  outline: none;
+  border-radius: 6px;
+  margin: 0 1em 1.5em 0;
+  box-shadow: 4px 3px 6px #000;
+  transition: background linear 0.25s;
+  cursor: pointer;
+}
+#wrapper #calculator #buttons button:hover {
+  transform: scale(1.025);
+}
+#wrapper #calculator #buttons button p {
+  font-family: 'XITS Math', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+#wrapper #calculator #buttons .operatorBtn {
+  background: #C5242A;
+  color: #E1E4E9;
+  border: 3.5px outset #af2025;
+}
+#wrapper #calculator #buttons .operatorBtn:hover {
+  background: #dc0d14;
+}
+#wrapper #calculator #buttons .operatorBtn p {
+  text-shadow: 0 0 2px black;
+}
+#wrapper #calculator #buttons .numpadBtn {
+  background: #E1E4E9;
+  color: #1C45AE;
+  border: 3.5px outset #d2d7de;
+}
+#wrapper #calculator #buttons .numpadBtn:hover {
+  background: white;
+}
+#wrapper #calculator #buttons .numpadBtn p {
+  text-shadow: 0 0 1px #4F69A8;
+}
+#wrapper #calculator #buttons #equals {
+  height: 9.5em;
+  padding-bottom: 8em;
+}
+#wrapper #calculator #buttons #divide p {
+  font-size: 22px;
+}
+#wrapper #calculator #buttons #sqrt p {
+  font-size: 14px;
+  margin-top: 3.2px;
+}
+#wrapper #calculator #buttons #sqr p {
+  font-size: 18px;
+  font-weight: 100;
+  margin-top: 1px;
+}
+#wrapper #calculator #buttons #modulo p, #wrapper #calculator #buttons #clear p {
+  font-size: 18px;
+  padding-top: 3px;
+  margin-top: -1.5px;
+}
+#wrapper #calculator #buttons #back p {
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: -2.75px;
+}
+#wrapper #calculator #buttons #pi p, #wrapper #calculator #buttons #e p {
+  font-size: 23px;
+  font-weight: normal;
+  margin-top: -1.5px;
+}
+#wrapper #design-info {
+  margin-top: 0.9em;
+  margin-bottom: -1em;
+}
+@media (max-width: 480px) {
+  #wrapper #design-info {
+    display: none;
+  }
+}
+@media (max-height: 800px) {
+  #wrapper #design-info {
+    display: none;
+  }
+}
+#wrapper #design-info p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #dc0d14;
+  font-weight: bold;
+  text-shadow: 0 0 6px white;
+}
+#wrapper #design-info p a {
+  text-decoration: none;
+  color: #083cc2;
+}

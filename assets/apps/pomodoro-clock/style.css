@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #071B4E;
+  font-size: 20px;
+}
+button:hover {
+  color: #DAAA49;
+}
+
+.inc-dec-btns {
+  display: flex;
+  justify-content: space-evenly;
+  width: 16em;
+}
+.inc-dec-btns .inc-btn {
+  width: 3em;
+  height: 3em;
+}
+.inc-dec-btns .dec-btn {
+  width: 3em;
+  height: 3em;
+}
+
+.time-readout {
+  font-size: 30px;
+  letter-spacing: 4px;
+  padding: 0.75em 0;
+}
+
+.area-container {
+  background: #5B72A9;
+  color: #071B4E;
+  padding: 1em;
+  border: 6px outset #142C69;
+}
+@media (max-width: 880px) {
+  .area-container {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+}
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(140deg, #3B5492 0%, #243E81 40%, #071B4E 100%);
+  user-select: none;
+}
+@media (max-width: 880px) {
+  #wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#wrapper #left-well {
+  display: flex;
+  align-items: center;
+}
+#wrapper #left-well #session-area {
+  border-right: none;
+}
+@media (max-width: 880px) {
+  #wrapper #left-well #session-area {
+    border-right: 6px outset #142C69;
+    border-bottom: none;
+  }
+}
+#wrapper #left-well #session-area #session-label {
+  height: 2.25em;
+  margin-top: 0.55em;
+}
+#wrapper #mid-well {
+  display: flex;
+  align-items: center;
+}
+#wrapper #mid-well #timer-area {
+  border-left: none;
+  border-right: none;
+}
+@media (max-width: 880px) {
+  #wrapper #mid-well #timer-area {
+    border-left: 6px outset #142C69;
+    border-right: 6px outset #142C69;
+    border-top: none;
+    border-bottom: none;
+  }
+}
+#wrapper #mid-well #timer-area #timer #timer-label {
+  height: 2.25em;
+  margin-top: 0.55em;
+  padding-top: 0.625em;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+@media (max-width: 880px) {
+  #wrapper #mid-well #timer-area #timer #timer-label {
+    margin-top: -0.5em;
+  }
+}
+#wrapper #mid-well #timer-area #timer #time-left {
+  font-family: 'Fira Code', monospace;
+  letter-spacing: 6px;
+  font-size: 31px;
+  padding: 0.65em 0;
+}
+#wrapper #mid-well #timer-area #timer #timer-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 16em;
+}
+#wrapper #mid-well #timer-area #timer #timer-buttons .timer-btns {
+  width: 3em;
+  height: 3em;
+}
+#wrapper #mid-well #timer-area #timer #timer-buttons #start_stop {
+  width: 4em;
+}
+#wrapper #right-well {
+  display: flex;
+  align-items: center;
+}
+#wrapper #right-well #break-area {
+  border-left: none;
+}
+@media (max-width: 880px) {
+  #wrapper #right-well #break-area {
+    border-left: 6px outset #142C69;
+    border-top: none;
+  }
+}
+#wrapper #right-well #break-area #break-label {
+  height: 2.25em;
+  margin-top: 0.55em;
+}
