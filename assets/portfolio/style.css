@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Elephant, sans-serif;
+  font-size: 16px;
+  user-select: none;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  height: 9vh;
+  background: linear-gradient(100deg, #66fcaa 0%, #4ec287 100%);
+  border-bottom: 3px solid #0b0c10;
+}
+@media (max-width: 600px) {
+  #navbar {
+    justify-content: center;
+  }
+}
+#navbar ul {
+  display: flex;
+}
+#navbar ul li {
+  font-size: 19px;
+  list-style: none;
+}
+#navbar ul li a {
+  text-decoration: none;
+  color: #0b0c10;
+  padding: 28.5px 30px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+@media (max-width: 600px) {
+  #navbar ul li a {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+#navbar ul li a:hover {
+  background: #0b0c10;
+  color: #66fcaa;
+}
+
+#portfolio {
+  text-align: center;
+  min-height: 90vh;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  background: #0b0c10;
+  color: #d5d6d7;
+}
+#portfolio h1 {
+  font-size: 44px;
+  padding: 20px 20px 3rem 20px;
+}
+#portfolio #tab-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 10px;
+  font-weight: bold;
+  font-family: consolas, sans-serif;
+}
+#portfolio #tab-list .tab {
+  width: 12rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  padding-top: 0.725rem;
+  cursor: pointer;
+  list-style-type: none;
+  border-radius: 10px;
+}
+@media (max-width: 600px) {
+  #portfolio #tab-list .tab {
+    margin-bottom: 0;
+  }
+}
+#portfolio #tab-list .tab:hover {
+  background: #334a56;
+}
+#portfolio #tab-list .active {
+  background: transparent;
+  color: #66fcaa;
+  border: 2px solid #66fcaa;
+  padding-top: 0.65rem;
+}
+#portfolio #tab-content {
+  width: 60%;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  user-select: text;
+  line-height: 1.5;
+  font-size: 1.025rem;
+  font-family: consolas, sans-serif;
+}
+#portfolio #tab-content [data-tab-content] {
+  display: none;
+}
+#portfolio #tab-content .active[data-tab-content] {
+  display: initial;
+}
+#portfolio #tab-content .active[data-tab-content] p > a {
+  text-decoration: none;
+  color: #4ec287;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background: linear-gradient(-100deg, #66fcaa 0%, #4ec287 100%);
+  color: #0b0c10;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: consolas, sans-serif;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7);
+}

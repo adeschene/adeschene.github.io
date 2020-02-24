@@ -1,0 +1,13 @@
+{
+"companyName": "Oddysee",
+"productName": "Placeholder",
+"dataUrl": "WebBuilds.data.unityweb",
+"wasmCodeUrl": "WebBuilds.wasm.code.unityweb",
+"wasmFrameworkUrl": "WebBuilds.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Light",
+"backgroundColor": "#828080",
+"cacheControl": {"default": "must-revalidate"}
+}

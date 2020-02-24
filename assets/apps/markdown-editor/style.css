@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #FF8A00;
+}
+
+#window-container {
+  display: flex;
+}
+#window-container .title-bar {
+  position: relative;
+  height: 4%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: white;
+  padding-top: 4px;
+  background: #0B69C1;
+  box-shadow: 0 3px 12px 1px black;
+}
+#window-container #editor-window, #window-container #preview-window {
+  height: 96vh;
+  margin-top: 2vh;
+  width: 48vw;
+  margin-left: 1.5vw;
+  margin-right: 0.5vw;
+  border: 1px solid black;
+  background: #e1f5ff;
+  color: black;
+  box-shadow: 0 3px 12px 1px black;
+}
+#window-container #editor-window #editor, #window-container #preview-window #editor, #window-container #preview-window #preview {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-wrap: break-word;
+  resize: none;
+  padding: 5px 15px;
+  height: 96%;
+  border: none;
+  outline: none;
+  background: #e1f5ff;
+  color: black;
+}
+#window-container #preview-window {
+  margin-left: 0.5vw;
+  margin-right: 1.5vw;
+}
+#window-container #preview-window #preview {
+  line-height: 1.5;
+}
+#window-container #preview-window #preview pre, #window-container #preview-window #preview code {
+  background: #AECCD1;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+#window-container #preview-window #preview ul, #window-container #preview-window #preview ol {
+  margin: 8px 0 8px 20px;
+}
+#window-container #preview-window #preview h1, #window-container #preview-window #preview h2, #window-container #preview-window #preview h3, #window-container #preview-window #preview h4, #window-container #preview-window #preview h5, #window-container #preview-window #preview h6 {
+  margin: 6px 0;
+}
+#window-container #preview-window #preview p {
+  margin: 10px 0;
+}
+#window-container #preview-window #preview blockquote {
+  border-left: 2px solid teal;
+  padding-left: 4px;
+  margin: 15px 0 15px 12px;
+  color: teal;
+}
+#window-container #preview-window #preview code {
+  max-width: 100%;
+}
+#window-container #preview-window #preview table, #window-container #preview-window #preview th, #window-container #preview-window #preview ta, #window-container #preview-window #preview td {
+  border: 1px solid green;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+#window-container #preview-window #preview th, #window-container #preview-window #preview ta, #window-container #preview-window #preview td {
+  padding: 4px 8px;
+  margin: 0;
+}
+#window-container #preview-window #preview img {
+  width: 550px;
+}
+@media (max-width: 1250px) {
+  #window-container #preview-window #preview img {
+    width: 300px;
+  }
+}

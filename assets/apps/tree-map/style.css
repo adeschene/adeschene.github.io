@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  font-size: 12px;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+#wrapper #map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#wrapper #map #header {
+  user-select: none;
+  margin-bottom: 20px;
+}
+#wrapper #map #header #title {
+  font-size: 32px;
+}
+#wrapper #map #header #description {
+  font-size: 16px;
+}
+#wrapper #map .window {
+  user-select: none;
+}
+#wrapper #map .window .tile {
+  stroke: black;
+}
+#wrapper #map .window .tile-text {
+  pointer-events: none;
+  font-size: 10px;
+  fill: black;
+}
+#wrapper #map #tooltip {
+  position: fixed;
+  padding: 8px;
+  font-size: 12px;
+  text-align: left;
+  background: #0d2c80;
+  border: 1px solid white;
+  border-radius: 4px;
+  pointer-events: none;
+  color: #fff;
+}
+#wrapper #map #legend {
+  display: block;
+  margin: auto;
+  user-select: none;
+}

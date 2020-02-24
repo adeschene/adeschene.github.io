@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  font-family: 'Coda', monospace;
+  font-size: 16px;
+  text-align: center;
+  user-select: none;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2A61B1;
+}
+#wrapper #plot {
+  background: #EFEFEF;
+  box-shadow: 18px 18px 2px 4px #062C64;
+  border-radius: 12px;
+}
+#wrapper #plot #title {
+  background: #093980;
+  color: #EFEFEF;
+  padding: 25px;
+  border-radius: 10px 10px 0 0;
+}
+#wrapper #plot #title h2 {
+  margin-bottom: 6px;
+  font-size: 27px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px black;
+}
+#wrapper #plot #title h3 {
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 6px black;
+}
+#wrapper #plot .dot {
+  stroke: #0A0A0A;
+}
+#wrapper #plot #x-axis, #wrapper #plot #y-axis {
+  font-family: 'PT Mono', monospace;
+  font-size: 13px;
+  color: #011737;
+  pointer-events: none;
+}
+#wrapper #plot #tooltip {
+  position: fixed;
+  max-width: 250px;
+  height: auto;
+  margin: auto;
+  padding: 8px;
+  font-size: 12px;
+  text-align: left;
+  border-radius: 4px;
+  background: #0D49A1;
+  color: #EFEFEF;
+}
+#wrapper #plot #legend {
+  width: 200px;
+  height: 100px;
+  fill: #011737;
+}
+#wrapper #plot #legend .legend-rect {
+  width: 15px;
+  height: 15px;
+  stroke: #0A0A0A;
+}

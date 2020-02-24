@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Alec Deschene - Home</title>
+  <script src="https://kit.fontawesome.com/1cff4a09a9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/home/style.css">
+</head>
+<body>
+<nav id="navbar">
+  <ul>
+    <li><a href="#welcome">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+<section id="welcome">
+  <div>
+    <h1>Alec Deschene</h1>
+    <h2>Software Developer</h2>
+  </div>
+</section>
+<section id="about">
+  <div>
+    <h1>Info</h1>
+    <ul id="tab-list">
+      <li data-tab-target="#background-tab" class="active tab">Background</li>
+      <li data-tab-target="#education-tab" class="tab">Education</li>
+      <li data-tab-target="#employment-tab" class="tab">Employment</li>
+      <li data-tab-target="#certification-tab" class="tab">Certification</li>
+    </ul>
+  </div>
+  <div id="tab-content">
+    <div id="background-tab" data-tab-content class='active'>
+      <p>I love making things and learning new technologies.</p><br/>
+      <p>To me, "just-in-time" is the most exciting and fun way to learn something new.</p><br/>
+      <p>I aspire to be proficient in a variety of different skills, including:<br/>
+        UI/UX design & development, 
+        Game design & development,<br/>
+        Full stack web development,
+        3D animation & modelling,<br/>
+        Android/iOS development, 
+        Rubik's cube speedsolving,<br/>
+        Small-scale woodworking, 
+        Small engine restoration,<br/>
+        Specialty PCB design
+      </p>
+    </div>
+    <div id="education-tab" data-tab-content>
+      <p>Bachelor of Computer Science, Portland State University, 2019</p><br/>
+      <p>Associate of Science (Highest Honors), Portland Community College, 2017</p>
+    </div>
+    <div id="employment-tab" data-tab-content>
+      <p>
+        I am currently seeking full- or part-time, entry-level employment.<br/>
+        In the mean time, I'm working on building my portfolio, gaining expertise in various technologies, and earning certifications in various areas.<br/>
+        I have experience working with many technologies, and on many projects, both solo and as part of a team, during my time at PSU.<br/>
+        I believe this experience would translate very well into an entry-level position.
+      </p>
+    </div>
+    <div id="certification-tab" data-tab-content>
+      <p>
+        <a href="https://www.freecodecamp.org/certification/adeschene/full-stack" target="_blank">
+          FreeCodeCamp Full Stack Developer Certification
+        </a> - 1/19/2020
+      </p>
+    </div>
+  </div>
+</section>
+<section id="projects">
+  <div id="project-head-container"><h1>Some of my work</h1></div>
+  <h2>Applications</h2>
+  <div id="apps-display">
+    <a class="project-tile" href="react-calculator.html">
+      <img src="./assets/apps/react-calculator/react-calculator-screenshot.png" alt="React calculator screenshot">
+      <h4>React Calculator</h4>
+    </a>
+    <a class="project-tile" href="markdown-editor.html">
+      <img src="./assets/apps/markdown-editor/markdown-editor-screenshot.png" alt="Markdown editor screenshot">
+      <h4>Markdown Editor</h4>
+    </a>
+    <a class="project-tile" href="choropleth-map.html">
+      <img src="./assets/apps/choropleth-map/choropleth-map-screenshot.png" alt="Choropleth map screenshot">
+      <h4>Choropleth Map</h4>
+    </a>
+  </div>
+  <h2>Games</h2>
+  <div id="games-display">
+    <a class="project-tile" href="tak-pc.html">
+      <img src="./assets/games/tak-pc/tak-pc-screenshot.png" alt="Tak (PC) game screenshot">
+      <h4>Tak (PC)</h4>
+    </a>
+    <a class="project-tile" href="placeholder.html">
+      <img src="./assets/games/placeholder/placeholder-screenshot.png" alt="Placeholder game screenshot">
+      <h4>Placeholder</h4>
+    </a>
+    <a class="project-tile" href="laser-defender.html">
+      <img src="./assets/games/laser-defender/laser-defender-screenshot.png" alt="Laser defender game screenshot">
+      <h4>Laser Defender</h4>
+    </a>
+  </div>
+  <a href="portfolio.html"><h2>More</h2></a>
+</section>
+<section id="contact">
+  <div id="contact-header">
+    <h1>Let's get in touch...</h1>
+  </div>
+  <ul>
+    <li>
+      <a id="profile-link" class="contact-link" href="https://github.com/adeschene" target="_blank">
+        <i class="fab fa-github"></i>
+        <p>GitHub</p>
+      </a>
+    </li>
+    <li>
+      <a class="contact-link" href="https://linkedin.com/in/adeschene" target="_blank">
+        <i class="fab fa-linkedin"></i>
+        <p>LinkedIn</p>
+      </a>
+    </li>
+    <li>
+      <a class="contact-link" href="mailto:alecdeschene@gmail.com" target="_blank">
+        <i class="fas fa-envelope-square"></i>
+        <p>Email</p>
+      </a>
+    </li>
+    <li>
+      <a class="contact-link" href="tel:+1-360-200-3890" target="_blank">
+        <i class="fas fa-phone"></i>
+        <p>Call</p>
+      </a>
+    </li>
+  </ul>
+</section>
+<footer>
+  <p>Copyright 2019, Alec Deschene</p>
+</footer>
+  <script src="./assets/home/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Tak",
+"dataUrl": "WebBuilds.data.unityweb",
+"wasmCodeUrl": "WebBuilds.wasm.code.unityweb",
+"wasmFrameworkUrl": "WebBuilds.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#740000",
+"cacheControl": {"default": "must-revalidate"}
+}
