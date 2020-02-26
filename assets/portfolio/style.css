@@ -6,120 +6,172 @@
 
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
-  font-family: Elephant, sans-serif;
-  font-size: 16px;
+  font-family: elephant, sans-serif;
   user-select: none;
+  overflow: hidden;
+  height: 100%;
 }
-
-#navbar {
+body #page-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+body #page-wrapper #header-wrapper {
+  flex: none;
+}
+body #page-wrapper #header-wrapper #navbar {
   display: flex;
   align-items: center;
-  position: fixed;
-  flex-direction: row;
   justify-content: flex-end;
   width: 100%;
-  height: 9vh;
   background: linear-gradient(100deg, #66fcaa 0%, #4ec287 100%);
-  border-bottom: 3px solid #0b0c10;
+  border-bottom: 0.325vh solid #0b0c10;
 }
-@media (max-width: 600px) {
-  #navbar {
+@media only screen and (max-width: 65rem) {
+  body #page-wrapper #header-wrapper #navbar {
     justify-content: center;
   }
 }
-#navbar ul {
+body #page-wrapper #header-wrapper #navbar ul {
   display: flex;
 }
-#navbar ul li {
-  font-size: 19px;
+body #page-wrapper #header-wrapper #navbar ul li {
+  font-size: 1.25rem;
   list-style: none;
 }
-#navbar ul li a {
-  text-decoration: none;
-  color: #0b0c10;
-  padding: 28.5px 30px;
-  transition: background 0.2s ease, color 0.2s ease;
-}
-@media (max-width: 600px) {
-  #navbar ul li a {
-    padding-left: 20px;
-    padding-right: 20px;
+@media only screen and (max-width: 65rem) {
+  body #page-wrapper #header-wrapper #navbar ul li {
+    font-size: 1.35rem;
+  }
+  body #page-wrapper #header-wrapper #navbar ul li:last-child > a {
+    border-right: 0.325vh solid #0b0c10;
   }
 }
-#navbar ul li a:hover {
+body #page-wrapper #header-wrapper #navbar ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #0b0c10;
+  padding: 2.8916666667vh 0;
+  transition: background 0.2s ease, color 0.2s ease;
+  text-align: center;
+  width: 8rem;
+  height: 8.675vh;
+}
+@media only screen and (max-width: 65rem) {
+  body #page-wrapper #header-wrapper #navbar ul li a {
+    width: 25vw;
+    border-left: 0.325vh solid #0b0c10;
+  }
+}
+body #page-wrapper #header-wrapper #navbar ul li a:hover {
   background: #0b0c10;
   color: #66fcaa;
 }
-
-#portfolio {
+body #page-wrapper #content-wrapper {
+  flex: auto;
+  position: relative;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+body #page-wrapper #content-wrapper #portfolio {
   text-align: center;
-  min-height: 90vh;
-  padding-top: 8rem;
-  padding-bottom: 5rem;
+  min-height: 81vh;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   background: #0b0c10;
   color: #d5d6d7;
 }
-#portfolio h1 {
-  font-size: 44px;
-  padding: 20px 20px 3rem 20px;
+@media only screen and (max-width: 65rem) {
+  body #page-wrapper #content-wrapper #portfolio {
+    padding-top: 2rem;
+  }
 }
-#portfolio #tab-list {
+@media only screen and (max-width: 65rem) {
+  body #page-wrapper #content-wrapper #portfolio #tabs-wrapper {
+    display: none;
+  }
+}
+body #page-wrapper #content-wrapper #portfolio #tabs-wrapper h1 {
+  font-size: 2.75rem;
+  padding: 1.25rem 1.25rem 5rem 1.25rem;
+}
+body #page-wrapper #content-wrapper #portfolio #tabs-wrapper #tab-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 10px;
+  margin: 0 0.625rem;
   font-weight: bold;
-  font-family: consolas, sans-serif;
+  font-family: consolas, monospace, sans-serif;
 }
-#portfolio #tab-list .tab {
+body #page-wrapper #content-wrapper #portfolio #tabs-wrapper #tab-list .tab {
   width: 12rem;
   height: 3rem;
-  font-size: 1.2rem;
-  padding-top: 0.725rem;
+  font-size: 1.1875rem;
+  padding-top: 0.75rem;
   cursor: pointer;
   list-style-type: none;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
-@media (max-width: 600px) {
-  #portfolio #tab-list .tab {
+@media only screen and (max-width: 65rem) {
+  body #page-wrapper #content-wrapper #portfolio #tabs-wrapper #tab-list .tab {
     margin-bottom: 0;
   }
 }
-#portfolio #tab-list .tab:hover {
-  background: #334a56;
+body #page-wrapper #content-wrapper #portfolio #tabs-wrapper #tab-list .tab:hover {
+  color: #0b0c10;
+  background: #4ec287;
 }
-#portfolio #tab-list .active {
+body #page-wrapper #content-wrapper #portfolio #tabs-wrapper #tab-list .active {
   background: transparent;
   color: #66fcaa;
-  border: 2px solid #66fcaa;
-  padding-top: 0.65rem;
+  border: 0.125rem solid #66fcaa;
+  padding-top: 0.625rem;
 }
-#portfolio #tab-content {
+body #page-wrapper #content-wrapper #portfolio #tab-content {
   width: 60%;
-  margin-top: 3rem;
+  margin-top: 4rem;
   margin-left: auto;
   margin-right: auto;
   user-select: text;
-  line-height: 1.5;
-  font-size: 1.025rem;
-  font-family: consolas, sans-serif;
+  line-height: 1.5625rem;
+  font-size: 1.0625rem;
+  font-family: consolas, monospace, sans-serif;
 }
-#portfolio #tab-content [data-tab-content] {
+@media only screen and (max-width: 65rem) {
+  body #page-wrapper #content-wrapper #portfolio #tab-content {
+    width: 80%;
+    margin-top: 0;
+  }
+}
+body #page-wrapper #content-wrapper #portfolio #tab-content [data-tab-content] {
   display: none;
 }
-#portfolio #tab-content .active[data-tab-content] {
+body #page-wrapper #content-wrapper #portfolio #tab-content .active[data-tab-content] {
   display: initial;
 }
-#portfolio #tab-content .active[data-tab-content] p > a {
+body #page-wrapper #content-wrapper #portfolio #tab-content .active[data-tab-content] .tabLabel {
+  margin: 3rem 0 2rem 0;
+  display: none;
+}
+@media only screen and (max-width: 65rem) {
+  body #page-wrapper #content-wrapper #portfolio #tab-content .active[data-tab-content] .tabLabel {
+    display: block;
+  }
+}
+@media only screen and (max-width: 65rem) {
+  body #page-wrapper #content-wrapper #portfolio #tab-content .active[data-tab-content] p {
+    text-align: left;
+  }
+}
+body #page-wrapper #content-wrapper #portfolio #tab-content .active[data-tab-content] p a {
   text-decoration: none;
   color: #4ec287;
 }
-
-footer {
+body #page-wrapper #content-wrapper footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -127,8 +179,13 @@ footer {
   height: 10vh;
   background: linear-gradient(-100deg, #66fcaa 0%, #4ec287 100%);
   color: #0b0c10;
-  font-size: 1rem;
+  font-size: 1.0625rem;
   font-weight: bold;
-  font-family: consolas, sans-serif;
-  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7);
+  font-family: consolas, monospace, sans-serif;
+  text-shadow: 0 0 0.0625rem rgba(0, 0, 0, 0.7);
+}
+@media only screen and (max-width: 65rem) {
+  body #page-wrapper #content-wrapper footer {
+    font-size: 1.375rem;
+  }
 }

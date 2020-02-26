@@ -7,45 +7,54 @@
   <link rel="stylesheet" href="./assets/portfolio/style.css">
 </head>
 <body>
-<nav id="navbar">
-  <ul>
-    <li><a href="index.html#welcome">Home</a></li>
-    <li><a href="index.html#about">About</a></li>
-    <li><a href="index.html#projects">Work</a></li>
-    <li><a href="index.html#contact">Contact</a></li>
-  </ul>
-</nav>
-<section id="portfolio">
-  <div>
-    <h1>Portfolio</h1>
-    <ul id="tab-list">
-      <li data-tab-target="#apps-tab" class="active tab">Applications</li>
-      <li data-tab-target="#games-tab" class="tab">Video Games</li>
-      <li data-tab-target="#misc-tab" class="tab">Miscellaneous</li>
-    </ul>
+  <div id="page-wrapper">
+    <div id="header-wrapper">
+      <nav id="navbar">
+        <ul>
+          <li><a href="#welcome">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="content-wrapper">
+      <section id="portfolio">
+        <div id="tabs-wrapper">
+          <h1>Portfolio</h1>
+          <ul id="tab-list">
+            <li data-tab-target="#apps-tab" class="active tab">Applications</li>
+            <li data-tab-target="#games-tab" class="tab">Video Games</li>
+            <li data-tab-target="#misc-tab" class="tab">Miscellaneous</li>
+          </ul>
+        </div>
+        <div id="tab-content">
+          <div id="apps-tab" data-tab-content class='active'>
+            <h2 class='tabLabel'>Applications</h2>
+            <p><a href="https://github.com/PositiveDeltaS/FCapture" target="_blank">F-Capture</a> - A forensic data collection tool that I am helping develop with a small team, written in PowerShell. I designed and developed the majority of the UI for this project.</p><br/>
+            <p><a href="https://github.com/adeschene/Float_DFA_Model" target="_blank">Float_DFA_Model</a> - A model of the floating point number representation using a Deterministic Finite Automaton.</p><br/>
+            <p><a href="pomodoro-clock.html">Pomodoro Clock</a> - A simple pomodoro clock/timer made using React.</p><br/>
+            <p><a href="tree-map.html">Tree Map</a> - An example tree map data visualization made using d3.js.</p><br/>
+            <p><a href="heat-map.html">Heat Map</a> - An example heat map data visualization made using d3.js.</p><br/>
+            <p><a href="scatter-plot.html">Scatter Plot</a> - An example scatter plot data visualization made using d3.js.</p>
+          </div>
+          <div id="games-tab" data-tab-content>
+            <h2 class='tabLabel'>Video Games</h2>
+            <p><a href="tak-mobile.html">Tak (Mobile)</a> - A mobile rendition of the abstract board game of the same name.</p><br/>
+            <p><a href="https://github.com/adeschene/haskell-game" target="_blank">Haskell Game</a> - A small adventure game, with basic graphics, written in Haskell.</p><br/>
+            <p><a href="https://github.com/adeschene/rust_text-game" target="_blank">Rust Text Game</a> - A small Linux CLI text adventure game written in Rust.</p>
+          </div>
+          <div id="misc-tab" data-tab-content>
+            <h2 class='tabLabel'>Miscellaneous</h2>
+            <p>MintyPi PCB - A redesign of a PCB meant to allow a raspberry pi based handheld retro game emulation system to fit into an altoids tin.</p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>Copyright 2019, Alec Deschene</p>
+      </footer>
+    </div>
   </div>
-  <div id="tab-content">
-    <div id="apps-tab" data-tab-content class='active'>
-      <p><a href="https://github.com/PositiveDeltaS/FCapture" target="_blank">F-Capture</a> - A forensic data collection tool that I am helping develop with a small team, written in PowerShell. I designed and developed the majority of the UI for this project.</p><br/>
-      <p><a href="https://github.com/adeschene/Float_DFA_Model" target="_blank">Float_DFA_Model</a> - A model of the floating point number representation using a Deterministic Finite Automaton.</p><br/>
-      <p><a href="pomodoro-clock.html">Pomodoro Clock</a> - A simple pomodoro clock/timer made using React.</p><br/>
-      <p><a href="tree-map.html">Tree Map</a> - An example tree map data visualization made using d3.js.</p><br/>
-      <p><a href="heat-map.html">Heat Map</a> - An example heat map data visualization made using d3.js.</p><br/>
-      <p><a href="scatter-plot.html">Scatter Plot</a> - An example scatter plot data visualization made using d3.js.</p>
-    </div>
-    <div id="games-tab" data-tab-content>
-      <p><a href="tak-mobile.html">Tak (Mobile)</a> - A mobile rendition of the abstract board game of the same name.</p><br/>
-      <p><a href="https://github.com/adeschene/haskell-game" target="_blank">Haskell Game</a> - A small adventure game, with basic graphics, written in Haskell.</p><br/>
-      <p><a href="https://github.com/adeschene/rust_text-game" target="_blank">Rust Text Game</a> - A small Linux CLI text adventure game written in Rust.</p>
-    </div>
-    <div id="misc-tab" data-tab-content>
-      <p>MintyPi PCB - A redesign of a PCB meant to allow a raspberry pi based handheld retro game emulation system to fit into an altoids tin.</p>
-    </div>
-  </div>
-</section>
-<footer>
-  <p>Copyright 2019, Alec Deschene</p>
-</footer>
   <script  src="./assets/portfolio/script.js"></script>
 </body>
 </html>
