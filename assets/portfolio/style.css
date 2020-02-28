@@ -12,12 +12,12 @@ html {
 body {
   font-family: elephant, sans-serif;
   user-select: none;
-  overflow: hidden;
   height: 100%;
 }
 body #page-wrapper {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   height: 100%;
 }
 body #page-wrapper #header-wrapper {
@@ -33,7 +33,7 @@ body #page-wrapper #header-wrapper #navbar {
 }
 @media only screen and (max-width: 65rem) {
   body #page-wrapper #header-wrapper #navbar {
-    justify-content: center;
+    display: none;
   }
 }
 body #page-wrapper #header-wrapper #navbar ul {
@@ -42,14 +42,6 @@ body #page-wrapper #header-wrapper #navbar ul {
 body #page-wrapper #header-wrapper #navbar ul li {
   font-size: 1.25rem;
   list-style: none;
-}
-@media only screen and (max-width: 65rem) {
-  body #page-wrapper #header-wrapper #navbar ul li {
-    font-size: 1.35rem;
-  }
-  body #page-wrapper #header-wrapper #navbar ul li:last-child > a {
-    border-right: 0.325vh solid #0b0c10;
-  }
 }
 body #page-wrapper #header-wrapper #navbar ul li a {
   display: inline-block;
@@ -60,12 +52,6 @@ body #page-wrapper #header-wrapper #navbar ul li a {
   text-align: center;
   width: 8rem;
   height: 8.675vh;
-}
-@media only screen and (max-width: 65rem) {
-  body #page-wrapper #header-wrapper #navbar ul li a {
-    width: 25vw;
-    border-left: 0.325vh solid #0b0c10;
-  }
 }
 body #page-wrapper #header-wrapper #navbar ul li a:hover {
   background: #0b0c10;
@@ -88,6 +74,7 @@ body #page-wrapper #content-wrapper #portfolio {
 @media only screen and (max-width: 65rem) {
   body #page-wrapper #content-wrapper #portfolio {
     padding-top: 2rem;
+    min-height: 100vh;
   }
 }
 @media only screen and (max-width: 65rem) {
@@ -186,6 +173,6 @@ body #page-wrapper #content-wrapper footer {
 }
 @media only screen and (max-width: 65rem) {
   body #page-wrapper #content-wrapper footer {
-    font-size: 1.375rem;
+    font-size: 1.575rem;
   }
 }

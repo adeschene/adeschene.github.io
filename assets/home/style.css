@@ -12,12 +12,12 @@ html {
 body {
   font-family: elephant, sans-serif;
   user-select: none;
-  overflow: hidden;
   height: 100%;
 }
 body #page-wrapper {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   height: 100%;
 }
 body #page-wrapper #header-wrapper {
@@ -33,7 +33,7 @@ body #page-wrapper #header-wrapper #navbar {
 }
 @media only screen and (max-width: 65rem) {
   body #page-wrapper #header-wrapper #navbar {
-    justify-content: center;
+    display: none;
   }
 }
 body #page-wrapper #header-wrapper #navbar ul {
@@ -42,14 +42,6 @@ body #page-wrapper #header-wrapper #navbar ul {
 body #page-wrapper #header-wrapper #navbar ul li {
   font-size: 1.25rem;
   list-style: none;
-}
-@media only screen and (max-width: 65rem) {
-  body #page-wrapper #header-wrapper #navbar ul li {
-    font-size: 1.35rem;
-  }
-  body #page-wrapper #header-wrapper #navbar ul li:last-child > a {
-    border-right: 0.325vh solid #0b0c10;
-  }
 }
 body #page-wrapper #header-wrapper #navbar ul li a {
   display: inline-block;
@@ -60,12 +52,6 @@ body #page-wrapper #header-wrapper #navbar ul li a {
   text-align: center;
   width: 8rem;
   height: 8.675vh;
-}
-@media only screen and (max-width: 65rem) {
-  body #page-wrapper #header-wrapper #navbar ul li a {
-    width: 25vw;
-    border-left: 0.325vh solid #0b0c10;
-  }
 }
 body #page-wrapper #header-wrapper #navbar ul li a:hover {
   background: #0b0c10;
@@ -84,6 +70,11 @@ body #page-wrapper #content-wrapper #welcome {
   flex-direction: column;
   justify-content: center;
   background: #0b0c10;
+}
+@media only screen and (max-width: 65rem) {
+  body #page-wrapper #content-wrapper #welcome {
+    height: 100vh;
+  }
 }
 body #page-wrapper #content-wrapper #welcome div {
   margin: 0 1.25rem;
@@ -109,6 +100,7 @@ body #page-wrapper #content-wrapper #about {
 @media only screen and (max-width: 65rem) {
   body #page-wrapper #content-wrapper #about {
     padding-top: 2rem;
+    min-height: 100vh;
   }
 }
 @media only screen and (max-width: 65rem) {
@@ -164,6 +156,7 @@ body #page-wrapper #content-wrapper #about #tab-content {
 }
 @media only screen and (max-width: 65rem) {
   body #page-wrapper #content-wrapper #about #tab-content {
+    width: 80%;
     margin-top: 0;
   }
 }
@@ -198,6 +191,11 @@ body #page-wrapper #content-wrapper #projects {
   min-height: 91vh;
   color: #d5d6d7;
   background: #0b0c10;
+}
+@media only screen and (max-width: 65rem) {
+  body #page-wrapper #content-wrapper #projects {
+    min-height: 100vh;
+  }
 }
 body #page-wrapper #content-wrapper #projects h2 {
   text-decoration: underline;
@@ -257,7 +255,7 @@ body #page-wrapper #content-wrapper #projects #apps-display .project-tile, body 
   height: 21.875rem;
   width: 21.875rem;
   background: #66fcaa;
-  box-shadow: 0.125rem 0.75rem 0.25rem rgba(0, 0, 0, 0.7);
+  box-shadow: 0.5rem 0.55rem 0.25rem rgba(0, 0, 0, 0.9);
   text-decoration: none;
   font-size: 1.025rem;
   border-radius: 0.09375rem;
@@ -266,8 +264,8 @@ body #page-wrapper #content-wrapper #projects #apps-display .project-tile, body 
 @media only screen and (max-width: 65rem) {
   body #page-wrapper #content-wrapper #projects #apps-display .project-tile, body #page-wrapper #content-wrapper #projects #games-display .project-tile {
     margin: 0 auto 1.25rem auto;
-    height: 36.25rem;
-    width: 36.25rem;
+    height: 80vw;
+    width: 80vw;
     font-size: 1.25rem;
   }
 }
@@ -299,6 +297,11 @@ body #page-wrapper #content-wrapper #contact {
   flex-direction: column;
   justify-content: center;
   background: #1f2833;
+}
+@media only screen and (max-width: 65rem) {
+  body #page-wrapper #content-wrapper #contact {
+    min-height: 90.325vh;
+  }
 }
 body #page-wrapper #content-wrapper #contact #contact-header {
   text-align: center;
@@ -346,6 +349,30 @@ body #page-wrapper #content-wrapper #contact ul li .contact-link .fab, body #pag
   margin-right: 0.625rem;
   align-self: center;
 }
+body #page-wrapper #content-wrapper #contact #resume-btn {
+  color: #66fcaa;
+  align-self: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: consolas, monospace, sans-serif;
+  font-size: 1.75rem;
+  width: 10.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 0.125rem solid #66fcaa;
+  text-decoration: none;
+  border-radius: 0.625rem;
+  text-align: center;
+}
+@media only screen and (max-width: 65rem) {
+  body #page-wrapper #content-wrapper #contact #resume-btn {
+    font-size: 2.25rem;
+  }
+}
+body #page-wrapper #content-wrapper #contact #resume-btn:hover {
+  color: #0b0c10;
+  background: #4ec287;
+}
 body #page-wrapper #content-wrapper footer {
   display: flex;
   flex-direction: row;
@@ -361,6 +388,6 @@ body #page-wrapper #content-wrapper footer {
 }
 @media only screen and (max-width: 65rem) {
   body #page-wrapper #content-wrapper footer {
-    font-size: 1.375rem;
+    font-size: 1.575rem;
   }
 }
