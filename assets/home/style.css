@@ -11,14 +11,13 @@ html {
 
 body {
   font-family: elephant, sans-serif;
-  user-select: none;
-  height: 100%;
 }
 body #page-wrapper {
   display: flex;
   flex-direction: column;
   overflow: hidden;
   height: 100%;
+  user-select: none;
 }
 body #page-wrapper #header-wrapper {
   flex: none;
