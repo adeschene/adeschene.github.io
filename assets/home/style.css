@@ -60,7 +60,7 @@ body #page-wrapper #header-wrapper #navbar ul li a:hover {
 body #page-wrapper #content-wrapper {
   flex: auto;
   position: relative;
-  overflow-y: auto;
+  /*overflow-y: auto;*/
   scroll-behavior: smooth;
 }
 body #page-wrapper #content-wrapper #welcome {
