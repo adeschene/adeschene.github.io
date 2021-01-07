@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>sleepyti.me Clone for Iris</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./assets/apps/sleepytime-clone/style.css">
+  <script src="./assets/apps/sleepytime-clone/script.js"></script>
+</head>
+<body onload="updateOutputs()">
+  <div id="wrapper">
+    <h2>sleepyti.me Clone for Iris</h2>
+    <div id="formContainer">
+      <form id="timeForm" onload="updateOutputs()">
+        <div id="inputDDs">
+          <label for="hour">Hour:</label>
+          <select id="hour" name="hour" onchange="updateOutputs()">
+          <option value="00" selected>00</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+        </select>
+          <label for="minute">Minute:</label>
+          <select id="minute" name="minute" onchange="updateOutputs()">
+          <option id="00" selected>00</option>
+          <option id="05">05</option>
+          <option id="10">10</option>
+          <option id="15">15</option>
+          <option id="20">20</option>
+          <option id="25">25</option>
+          <option id="30">30</option>
+          <option id="35">35</option>
+          <option id="40">40</option>
+          <option id="45">45</option>
+          <option id="50">50</option>
+          <option id="55">55</option>
+        </select>
+        </div>
+        <label id="wakeupat_lbl" for="wakeupat_out">If you have to wake up at the entered time, you should try to go to bed at one of the following times:</label>
+        <output id="wakeupat_out" name="wakeupat_out" for="hour minute"></output>
+        <label id="passoutat_lbl" for="passoutat_out">If you plan to fall asleep at the entered time, you should try to wake up at one of the following times:</label>
+        <output id="passoutat_out" name="passoutat_out" for="hour minute"></output>
+        <label id="sleepnow_lbl" for="sleepnow_out">If you go to bed NOW, you should try to wake up at one of the following times:</label>
+        <output id="sleepnow_out" name="sleepnow_out"></output>
+        <button id="reload_btn" onlick="location.reload()">Refresh</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

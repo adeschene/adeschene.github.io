@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto Mono", monospace;
+  font-size: 24px;
+  font-weight: bold;
+  color: #D32C90;
+  background: #2CD36F;
+  text-align: center;
+}
+body #wrapper h2 {
+  font-size: 3rem;
+  text-shadow: 0.1rem 0.1rem 0.125rem white, -0.2rem -0.2rem 0.125rem black;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: #ED211F;
+  color: #1FEBED;
+}
+body #wrapper #formContainer #timeForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #wrapper #formContainer #timeForm #inputDDs {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+body #wrapper #formContainer #timeForm #inputDDs select {
+  padding: 0.5rem;
+  margin-left: 0.75rem;
+  margin-right: 3rem;
+  border: none;
+  outline: none;
+  border-radius: 0.75rem;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+body #wrapper #formContainer #timeForm #inputDDs select:hover {
+  background: gainsboro;
+}
+body #wrapper #formContainer #timeForm label {
+  margin-top: 0.25rem;
+  color: black;
+}
+body #wrapper #formContainer #timeForm output {
+  font-family: "Courier Prime", monospace;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px #01331D;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+body #wrapper #formContainer #timeForm button {
+  padding: 0.45rem;
+  margin-bottom: 5rem;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+body #wrapper #formContainer #timeForm button:hover {
+  background: gainsboro;
+}
