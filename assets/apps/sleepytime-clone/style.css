@@ -82,6 +82,26 @@ body #wrapper #formContainer #timeForm output span {
   -webkit-text-stroke: 0.075rem #4D0442;
   font-size: 44px;
 }
+@media screen and (max-width: 1250px) {
+  body #wrapper #formContainer #timeForm output span {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 910px) {
+  body #wrapper #formContainer #timeForm output span {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  body #wrapper #formContainer #timeForm output {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 910px) {
+  body #wrapper #formContainer #timeForm output {
+    font-size: 18px;
+  }
+}
 body #wrapper #formContainer #timeForm button {
   padding: 0.45rem;
   margin-bottom: 2rem;
