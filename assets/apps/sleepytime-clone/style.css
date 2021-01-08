@@ -41,8 +41,8 @@ body #wrapper #formContainer #timeForm #inputDDs {
   width: 96%;
   display: flex;
   justify-content: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   margin-bottom: 2rem;
   border-bottom: 0.15rem solid #A63FC0;
 }
@@ -73,7 +73,7 @@ body #wrapper #formContainer #timeForm output {
   font-size: 30px;
   text-shadow: 2px 2px 2px #E9C5F1;
   margin-top: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   padding-left: 2%;
   padding-right: 2%;
 }
@@ -84,7 +84,7 @@ body #wrapper #formContainer #timeForm output span {
 }
 body #wrapper #formContainer #timeForm button {
   padding: 0.45rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   background: gainsboro;
   border: 0.2rem solid #A63FC0;
   outline: none;
