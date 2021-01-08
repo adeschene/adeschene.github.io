@@ -23,7 +23,7 @@ function updateOutputs() {
   var sleepNowTimes = calculateTimes(currHours, currMinutes, "sleepNow");
 
   // Set outputs accordingly
-  wakeUpAtOut.innerHTML = wakeUpTimes.map(colorCode).join(" OR ");
+  wakeUpAtOut.innerHTML = wakeUpTimes.map(colorCode).reverse().join(" OR ");
   passOutAtOut.innerHTML = passOutTimes.map(colorCode).join(" OR ");
   sleepNowOut.innerHTML = sleepNowTimes.map(colorCode).join(" OR ");
 }
@@ -48,7 +48,7 @@ function calculateTimes(hours, minutes, timeType) {
 
     timeArr.push(convertedTime); // Add calculated time to the array of times
   }
-  return timeType === "wakeUp" ? timeArr.reverse() : timeArr; // Return populated array of times
+  return timeArr; // Return populated array of times
 }
 
 // Function to color code output times for clarity
