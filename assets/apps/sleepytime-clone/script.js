@@ -23,9 +23,9 @@ function updateOutputs() {
   var sleepNowTimes = calculateTimes(currHours, currMinutes, "sleepNow");
 
   // Set outputs accordingly
-  wakeUpAtOut.value = wakeUpTimes.join(" or ");
-  passOutAtOut.value = passOutTimes.join(" or ");
-  sleepNowOut.value = sleepNowTimes.join(" or ");
+  wakeUpAtOut.innerHTML = wakeUpTimes.map(colorCode).join(" OR ");
+  passOutAtOut.innerHTML = passOutTimes.map(colorCode).join(" OR ");
+  sleepNowOut.innerHTML = sleepNowTimes.map(colorCode).join(" OR ");
 }
 
 // Function to calculate an array of time values for 1 of 3 contexts
@@ -49,4 +49,30 @@ function calculateTimes(hours, minutes, timeType) {
     timeArr.push(convertedTime); // Add calculated time to the array of times
   }
   return timeType === "wakeUp" ? timeArr.reverse() : timeArr; // Return populated array of times
+}
+
+// Function to color code output times for clarity
+function colorCode(value, index) {
+  // Color codes
+  const oneREM = "#E72D3C";
+  const twoREM = "#EA5D46";
+  const threeREM = "#EBA132";
+  const fourREM = "#E0D239";
+  const fiveREM = "#6BEB24";
+  const sixREM = "#16E023";
+
+  // Create array for color coding spans
+  var colorCodes =
+  [
+  '<span style="color:' + oneREM + '">',
+  '<span style="color:' + twoREM + '">',
+  '<span style="color:' + threeREM + '">',
+  '<span style="color:' + fourREM + '">',
+  '<span style="color:' + fiveREM + '">',
+  '<span style="color:' + sixREM + '">'];
+
+
+  // Return time value with surrounding color coded span tags
+  return colorCodes[index] + value + "</span>";
+
 }
