@@ -95,11 +95,13 @@ body #wrapper #formContainer #timeForm output span {
 @media screen and (max-width: 1250px) {
   body #wrapper #formContainer #timeForm output {
     font-size: 20px;
+    margin-bottom: 4.5rem;
   }
 }
 @media screen and (max-width: 910px) {
   body #wrapper #formContainer #timeForm output {
     font-size: 18px;
+    margin-bottom: 6rem;
   }
 }
 body #wrapper #formContainer #timeForm button {
